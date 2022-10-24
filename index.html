@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2much2Do</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/model.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+</head>
+
+<div class="wrapper">
+    <header>
+        <section id="inputSection">
+            <h1>2much2Do</h1>
+            <form>
+                <div>
+                    <label>Introduce una tarea --></label>
+                    <input type="text" id="inputTarea" placeholder="¡AQUI!">
+                </div>
+                <div>
+                    <label for="">Selecciona una prioridad --></label>
+                    <select id="selectPrioridad">
+                        <option value="urgente">Urgente</option>
+                        <option value="diaria">Diaria</option>
+                        <option value="mensual">Mensual</option>
+                    </select>
+                </div>
+                <div>
+                    <input type="submit" id="btnGuardar" value="Guardar">
+                </div>
+            </form>
+        </section>
+        <section id="searchBar">
+            <select id="selectPrioridadSearch">
+                <option value="urgente">Urgente</option>
+                <option value="diaria">Diaria</option>
+                <option value="mensual">Mensual</option>
+            </select>
+            <input type="text" id="inputTareaBuscar" placeholder="Buscar tarea">
+        </section>
+    </header>
+
+    <body>
+        <main>
+            <section id="tareaFila"></section>
+        </main>
+
+        <script src="./js/main.js"></script>
+
+    </body>
+</div>
+
+</html>

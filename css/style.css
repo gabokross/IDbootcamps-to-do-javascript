@@ -1,0 +1,67 @@
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} */
+
+.wrapper {
+    background-color: beige;
+    /* width: 100vw;
+    height: 100vh;
+    padding: 50px; */
+}
+
+#inputSection {
+    /* display: flex;
+    flex-direction: row;
+    width: 60vw;
+    height: 70px;
+    justify-content: space-around;
+    align-items: center; */
+    background-color: lightcoral;
+    border: 7px solid rgb(240, 170, 170);
+}
+
+#searchBar {
+    /* display: flex;
+    flex-direction: row;
+    width: 60vw;
+    height: 40px;
+    justify-content: right; */
+    background-color: rgb(250, 180, 180);
+    border: 7px solid rgb(238, 196, 196);
+}
+
+.btnGuardar {
+    cursor: pointer;
+}
+
+#tareaFila article {
+    display: flex;
+    flex-direction: row;
+    /* width: 60vw;
+    height: 40px; */
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#tareaFila article button {
+    display: flex;
+    margin-left: auto;
+}
+
+#tareaFila article.diaria {
+    background-color: rgb(127, 255, 212);
+    border-bottom: 1px solid black;
+}
+
+#tareaFila article.mensual {
+    background-color: rgb(60, 181, 175);
+    border-bottom: 1px solid black;
+}
+
+#tareaFila article.urgente {
+    background-color: tomato;
+    border-bottom: 1px solid black;
+}
