@@ -57,19 +57,17 @@ function pintarTareas() {
 }
 
 //FILTRAR POR PRIORIDAD;
-selectPrioridadSearch.addEventListener('submit', (event) => {
+selectPrioridadSearch.addEventListener('selectPrioridadSearch', (event) => {
     event.preventDefault();
 
-    const filtrarPrioridad = (pListaTareas, pPrioridad) => {
-        const listaFiltrada = [];
-        let contador = 0;
+    const listaFiltrada = [];
+    let contador = 0;
 
-        for (let tarea of pListaTareas) {
-            if (tarea.prioridad === pPrioridad) {
-                listaFiltrada[contador] = tarea;
-                contador++;
-            }
+    for (let tarea of arrTareas) {
+        if (tarea.prioridad === pPrioridad) {
+            listaFiltrada[contador] = tarea;
+            contador++;
         }
-        pintarTareas(filtrarPrioridad);
     }
+    pintarTareas(filtrarPrioridad);
 });

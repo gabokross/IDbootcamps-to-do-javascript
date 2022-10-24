@@ -1,33 +1,22 @@
-/* * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-} */
+@import url(https://fonts.googleapis.com/css?family=Montserrat:regular,500,600,700,800,900);
 
 .wrapper {
     background-color: beige;
-    /* width: 100vw;
-    height: 100vh;
-    padding: 50px; */
+    font-family: Montserrat;
 }
 
 #inputSection {
-    /* display: flex;
-    flex-direction: row;
-    width: 60vw;
-    height: 70px;
-    justify-content: space-around;
-    align-items: center; */
     background-color: lightcoral;
     border: 7px solid rgb(240, 170, 170);
+    padding-left: 10px;
+    padding-bottom: 10px;
+}
+
+#inputTarea {
+    margin: 7px;
 }
 
 #searchBar {
-    /* display: flex;
-    flex-direction: row;
-    width: 60vw;
-    height: 40px;
-    justify-content: right; */
     background-color: rgb(250, 180, 180);
     border: 7px solid rgb(238, 196, 196);
 }
@@ -39,11 +28,10 @@
 #tareaFila article {
     display: flex;
     flex-direction: row;
-    /* width: 60vw;
-    height: 40px; */
     align-items: center;
     padding-left: 20px;
     padding-right: 20px;
+    padding-top: 5px;
 }
 
 #tareaFila article button {
